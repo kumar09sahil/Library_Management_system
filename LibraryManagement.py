@@ -30,6 +30,8 @@ class library:
         print(f"--> thank you {name} for donating {bookname} to the library \n")
 
     def issued_booklist(self) :
+         if len(self.issued_books) == 0:
+            print(f"--> no books issued at the moment ")
         for bookname,name in self.issued_books.items() :
             print(f"--> {bookname} is issued by {name}")
 
